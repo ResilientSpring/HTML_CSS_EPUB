@@ -7,3 +7,7 @@ span.stronger{
     font-style: italic;
     font-weight: bold;
 }
+
+body{
+    font-size: large;
+}
