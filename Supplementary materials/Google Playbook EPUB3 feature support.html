@@ -65,6 +65,33 @@
 
 <br/>
 
+<h2 id="enhanced">Enhanced EPUB support</h2>
+
+<p>Enhanced eBooks take advantage of the digital medium to include multimedia or interactive elements. Google Play Books supports audio and video embedded in EPUB 2 and EPUB 3 files.</p>
+
+<h3>Implementation</h3>
+
+<p>Audio or video embedded in an EPUB file should be contained in HTML5 tags, such as in the examples below:</p>
+
+<div class="code"><code class="notranslate">&lt;audio src="<span class="websearch-blue-text">audio/example.mp3</span>" /&gt;</code></div>
+
+<div class="code"><code class="notranslate">&lt;video src="<span class="websearch-blue-text">video/example.mp4</span>" width="<span class="websearch-blue-text">640</span>" height="<span class="websearch-blue-text">480</span>" /&gt;</code></div>
+
+<div class="code"><code class="notranslate">&lt;video title="<span class="websearch-blue-text">Example Video</span>" width="<span class="websearch-blue-text">640</span>" height="<span class="websearch-blue-text">480</span>" poster="<span class="websearch-blue-text">images/example.jpg</span>"&gt;<br>
+  &nbsp;&nbsp;&lt;source src="<span class="websearch-blue-text">video/example.mp4</span>" /&gt;<br>
+  &nbsp;&nbsp;&lt;source src="<span class="websearch-blue-text">video/example.webm</span>" /&gt;<br>
+  &lt;/video&gt;</code></div>
+
+<p>Only the following attributes will be parsed by Google Play Books:</p>
+
+<ul>
+  <li><code class="notranslate">src</code>: Defines the location of the file for video and audio.</li>
+  <li><code class="notranslate">width</code> and <code class="notranslate">height</code>: Dimensions for video.</li>
+  <li><code class="notranslate">poster</code>: Defines a static image for the video. Google supports image formats specified in EPUB specifications (static GIF, JPEG, PNG, and SVG images).</li>
+</ul>
+
+<p>Additional attributes will be ignored.</p>
+
 <h2>References:</h2>
 <ol>
   <li>
