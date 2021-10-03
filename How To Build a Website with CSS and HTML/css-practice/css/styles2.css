@@ -1,0 +1,8 @@
+img:hover{
+    border: 10px solid red;
+}
+
+p:hover{
+    font-size: 100px;
+    color: red;
+}
